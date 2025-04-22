@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 
-const floatingShape = ({color, size, left, top, delay}) => {
+const FloatingShape = ({color, size, left, top, delay}) => {
   return (
     <motion.div
       className={`absolute ${color} ${size} rounded-full opacity-20 blur-xl`}
@@ -25,4 +25,4 @@ const floatingShape = ({color, size, left, top, delay}) => {
   )
 }
 
-export default floatingShape
+export default FloatingShape
