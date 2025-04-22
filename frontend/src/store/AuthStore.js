@@ -51,7 +51,7 @@ export const useAuthStore = create((set) => ({
     login: async(email, password) => {
         set({isLoading: true, error: null});
         try{
-            const response = await axios.post(`${API_URL}/login`, {email, password});
+            const response = await axios.post(`${API_URL}/auth/login`, {email, password});
             set({user: response.data.user, isAuthenticated: true, isLoading: false, error: null});
             toast.success("Login successful!");
         }catch(error){
