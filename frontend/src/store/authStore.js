@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { m } from "framer-motion";
 
-const API_URL = "http://localhost:5000/auth";
+const API_URL = "https://authenticator-app-yhna.onrender.com";
 
 axios.defaults.withCredentials = true; // Enable sending cookies with requests
 
