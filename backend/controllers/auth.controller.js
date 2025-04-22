@@ -152,7 +152,7 @@ export const forgotPassword = async (req, res) => {
 
     await sendPasswordResetEmail(
       user.email,
-      `${process.env.CLIENT_URL}/reset-password/${resetToken}`
+      `https://authenticator-app-frontend-d37u.onrender.com/reset-password/${resetToken}`
     );
 
     res
