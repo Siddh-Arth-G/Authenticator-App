@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import FloatingShape from "./components/floatingShape";
+import floatingShape from "./components/floatingShape";
 
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
@@ -50,21 +50,21 @@ const App = () => {
       className="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-zinc-800
       flex items-center justify-center relative overflow-hidden"
     >
-      <FloatingShape
+      <floatingShape
         color="bg-green-700"
         size="w-64 h-64"
         top="-5%"
         left="10%"
         delay={0}
       />
-      <FloatingShape
+      <floatingShape
         color="bg-emerald-400"
         size="w-48 h-68"
         top="70%"
         left="80%"
         delay={5}
       />
-      <FloatingShape
+      <floatingShape
         color="bg-white"
         size="w-32 h-32"
         top="40%"
